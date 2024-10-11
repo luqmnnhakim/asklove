@@ -9,16 +9,12 @@
             font-family: Arial, sans-serif;
             text-align: center;
             background-color: palevioletred;
-            margin: 0; /* Remove default margin */
-            padding: 0; /* Remove default padding */
         }
         .container {
-            margin-top: 20px; /* Reduced margin for better mobile view */
-            padding: 10px; /* Add padding for mobile view */
+            margin-top: 50px;
         }
         .header_text {
             color: #333;
-            font-size: 1.5em; /* Adjust font size for better readability */
         }
         .gif_container img {
             max-width: 100%;
@@ -38,16 +34,12 @@
             border-radius: 5px;
             background-color: darkred;
             color: white;
-            width: 80%; /* Make buttons full width on mobile */
-            max-width: 200px; /* Maximum width for buttons */
-            left: 50%;
-            transform: translateX(-50%); /* Center button */
         }
         #yesButton {
-            top: 60%; /* Positioning yes button */
+            left: 40%;
         }
         #noButton {
-            top: 70%; /* Positioning no button */
+            left: 50%;
         }
     </style>
 </head>
@@ -68,12 +60,6 @@
 
     <script>
         let isMoving = true; // Flag to control movement
-
-        // Automatically execute a function on page load
-        window.onload = function() {
-            // You can add actions here that you want to perform when the page loads
-            console.log("Page loaded!");
-        };
 
         function nextPage() {
             window.location.href = "yes.html";
@@ -117,7 +103,10 @@
                     noButton.style.top = currentY + 'px';
                 }
             }, 1); // Adjust the speed of movement
+
+            // Pause movement for 1 second after hovering
+           
         }
     </script>
 </body>
-</html>
+</html> 
