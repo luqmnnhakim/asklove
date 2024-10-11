@@ -69,6 +69,12 @@
     <script>
         let isMoving = true; // Flag to control movement
 
+        // Automatically execute a function on page load
+        window.onload = function() {
+            // You can add actions here that you want to perform when the page loads
+            console.log("Page loaded!");
+        };
+
         function nextPage() {
             window.location.href = "yes.html";
         }
@@ -111,7 +117,6 @@
                     noButton.style.top = currentY + 'px';
                 }
             }, 1); // Adjust the speed of movement
-
         }
     </script>
 </body>
